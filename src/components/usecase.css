@@ -1,0 +1,53 @@
+.useCase {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:50px auto;
+    /* border: px solid red; */
+    /* background-color: antiquewhite; */
+    width:80vw;
+    height:fit-content;
+}
+.useCase .text{
+    /* border: 1px solid green; */
+    width:400px;
+    font-family: 'Noto Serif Oriya', serif;
+    box-sizing: border-box;
+}
+.useCase h3{
+    font-size: 65px;
+    font-weight: bold;
+    /* border: px solid pink; */
+    margin:0;
+    
+    font-weight: 700;
+}
+.useCase p{
+    margin:20px 0;
+    color:rgb( 77,  77,  77);
+}
+.useCase button{
+    padding: 12px 20px;
+    border-radius:  5px;
+    background-color: rgb(56,  134, 207);
+    outline:none;
+    border:none;
+    color:white;
+    font-size:  14px;
+    margin:0 20px;
+    cursor: pointer;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+}
+.useCase button i{
+    margin:auto 5px;
+    font-size:  15px;
+    
+}
+.useCase .image{
+    /* border: 1px solid orange;    */
+    padding:0 50px;
+}
+.useCase video{
+    margin:0 40px;
+}

@@ -1,0 +1,37 @@
+.carousel{
+    margin:0 auto;
+    max-width: 80vw;
+    /* border:1px solid red; */
+    position:relative;
+}
+
+.carousel-inner{
+    /* white-space:nowrap; */
+    
+    width:80vw;
+    overflow:hidden;
+    
+}
+.carousel-item{
+    transition: ease 1s;
+    width:fit-content;
+    display:flex;
+}
+.carousel-item img{
+    height:500px;
+}
+.carousel-control{
+    position:absolute;
+    top:50%;
+    padding:12px 20px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+
+}
+.left{
+    left:-100px
+}
+.right{
+    right:-100px
+}

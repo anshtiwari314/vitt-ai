@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+    color:white;
+}
+.header{
+    background-color: black;
+    /* border:1px solid red; */
+    display:flex;
+    padding:20px 0;
+}
+.header .childA{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    cursor: pointer;
+}
+.header .childB{
+    flex:3;
+    display:flex;
+    font-family: 'Noto Serif Oriya', serif;
+}
+.header .childC{
+    flex:1;
+    display: flex;
+    align-items: center;
+}   
+.header .childB p{
+    padding:10px 15px;
+    margin:auto 20px;
+    font-size: 18px;
+    color:rgb(177, 177, 177);
+    /* border:1px solid red; */
+    cursor: pointer;
+}
+.header .childB p:hover{
+    background-color:rgb(63, 63, 63);
+    color:white;
+}
+.header .childC button{
+    padding:12px 30px;
+    border-radius: 15px;
+    text-transform: lowercase;
+    background-color: rgb(56, 134, 207);
+    outline:none;
+    border:none;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+}
