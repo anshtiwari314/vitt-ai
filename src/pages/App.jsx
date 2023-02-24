@@ -32,7 +32,7 @@ function App() {
       <TeamSection/>
       
       <Awards/>
-      <Blog/>
+      {/* <Blog/> */}
 
       <Form/>
       <Footer/>

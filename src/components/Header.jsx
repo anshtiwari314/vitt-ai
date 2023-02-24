@@ -42,7 +42,7 @@ export default function Header() {
               <div><a href='#features'>Product</a></div>
               <div><a href='#team'>team</a></div>
               <div><a href='#awards'>Awards & Recognitions</a></div>
-              <div><a href='#blog-section'>blog</a></div>
+              {/* <div><a href='#blog-section'>blog</a></div> */}
               <div><a href='#form'>Get in touch</a></div>
           </div>
           <div className='childC'>
