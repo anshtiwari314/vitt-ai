@@ -60,7 +60,7 @@ export default function Header() {
                 <a href='#features' onClick={()=>setActive(false)} >Product</a>
                 <a href='#team' onClick={()=>setActive(false)}>team</a>
                 <a href='#awards' onClick={()=>setActive(false)}>Awards & Recognitions</a>
-                <a href='#blog-section' onClick={()=>setActive(false)}>blog</a>
+                {/* <a href='#blog-section' onClick={()=>setActive(false)}>blog</a> */}
                 <a href='#form' onClick={()=>setActive(false)}>Get in touch</a>
                 {/* <div className='options'><a href='#home'>home</a></div>
                 <div className='options'><a href='#offerings'>our offerings</a></div>
