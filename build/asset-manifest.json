@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.42ffe435.css",
-    "main.js": "/static/js/main.79542930.js",
+    "main.js": "/static/js/main.792adc18.js",
     "static/media/investment-money.gif": "/static/media/investment-money.f5c1785cc66ad8fb777e.gif",
     "static/media/chat-bot-security.png": "/static/media/chat-bot-security.e03757dfb46dd79663d0.png",
     "static/media/img3.jpg": "/static/media/img3.1110fd3ef21b07b10192.jpg",
@@ -46,10 +46,10 @@
     "static/media/awards-bg.png": "/static/media/awards-bg.9ba080c1ce7fe7173ad6.png",
     "index.html": "/index.html",
     "main.42ffe435.css.map": "/static/css/main.42ffe435.css.map",
-    "main.79542930.js.map": "/static/js/main.79542930.js.map"
+    "main.792adc18.js.map": "/static/js/main.792adc18.js.map"
   },
   "entrypoints": [
     "static/css/main.42ffe435.css",
-    "static/js/main.79542930.js"
+    "static/js/main.792adc18.js"
   ]
 }

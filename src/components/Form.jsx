@@ -35,14 +35,8 @@ export default function Form() {
     
     //  },[])
 
-     useEffect(()=>{
-        console.log(formData);
-        
-        
-
-        if(isMailSend.current===true){
-
-            emailjs.send('service_aipj2rd','template_ajezo6a', formData, '0nX7mwsU_D7eW8AbZ')
+    function sendUsingEmailJs(formData){
+        emailjs.send('service_aipj2rd','template_ajezo6a', formData, '0nX7mwsU_D7eW8AbZ')
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 
@@ -53,16 +47,47 @@ export default function Form() {
                 console.log('FAILED...', err);
                 
                 setIsFormSuccess(false)
-                successBox.current.style.display = 'flex';
+            successBox.current.style.display = 'flex';
             
             });
+    }
 
-        //console.log('i am mail current',isMailSend.current)
-            
+    function sendUsingNodeMailer(formData){
+        let body = JSON.stringify(formData)
+
+        fetch('https://vitt-mailer-production.up.railway.app/vitt-ai-send-mail',{
+            headers: {
+                "Content-Type": "application/json",
+            },
+            method:'POST',
+            body:body
+        })
+        .then(res=>res.json())
+        .then(result=>{console.log(result)
+            // if mail success 
+            setIsFormSuccess(true)
+            successBox.current.style.display = 'flex';
+        }).catch(err=>{
+            // if mail failed 
+            setIsFormSuccess(false)
+            successBox.current.style.display = 'flex';
+
+        })
+    }
+
+     useEffect(()=>{
+        console.log(formData);
+        
+        
+
+        if(isMailSend.current===true){
+
+            sendUsingNodeMailer(formData)
+
+            //console.log('i am mail current',isMailSend.current)            
             
             isMailSend.current = false;
             setFormData(initialObject);
-
 
             setSendBtn(false);
         }
